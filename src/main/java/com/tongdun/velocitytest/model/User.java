@@ -1,4 +1,4 @@
-package com.tongdun.velocitytest.module;
+package com.tongdun.velocitytest.model;
 
 /**
  * Created by trc on 16/12/14.
@@ -6,6 +6,7 @@ package com.tongdun.velocitytest.module;
 public class User {
     private String name;
     private String age;
+    private String id;
 
     public String getName(){
         return name;
@@ -21,6 +22,14 @@ public class User {
 
     public void setAge(String age){
         this.age = age;
+    }
+
+    public String getId(){
+        return this.id;
+    }
+
+    public void setId(String id){
+        this.id = id;
     }
 }
 

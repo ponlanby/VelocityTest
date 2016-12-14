@@ -1,0 +1,7 @@
+#if(${users})
+    #foreach(${user} in ${users})
+        ${user.id},${user.name}<br>
+    #end
+#else
+    No data
+#end
