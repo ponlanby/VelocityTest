@@ -13,9 +13,11 @@ import java.io.IOException;
 
 @Controller
 public class UsersController {
-    @RequestMapping(value = "/showInit",method = RequestMethod.GET)
-    public void showUser(HttpServletResponse response) throws IOException {
-        response.getWriter().print("<h1>Hello SpringMVC</h1>");
-        response.flushBuffer();
+    @RequestMapping(value = "/showUser",method = RequestMethod.GET)
+    public String showUser(){
+        //1.调用BLL层的服务接口
+        //2.设置模型数据
+        //3.返回逻辑视图名称
+        return "showUser";
     }
 }
